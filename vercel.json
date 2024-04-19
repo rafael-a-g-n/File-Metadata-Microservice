@@ -4,16 +4,16 @@
     {
       "src": "index.js",
       "use": "@now/node"
+    },
+    {
+      "src": "/views/(.*)",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "index.js"
-    },
-    {
-      "src": "/views/(.*)",
-      "dest": "/views/$1"
     }
   ]
 }
